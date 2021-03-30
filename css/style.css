@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300&display=swap");
+
+body {
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 400;
+	color: white;
+}
+
+body::before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	background-image: linear-gradient(
+			115deg,
+			rgba(58, 58, 158, 0.8),
+			rgba(136, 136, 206, 0.6)
+		),
+		url("https://res.cloudinary.com/dytnpjxrd/image/upload/v1604688097/form-background_otldij.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+h1 {
+	font-weight: 500;
+	text-align: center;
+}
+
+p {
+	font-size: 1.25rem;
+}
+
+h1,
+p {
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+}
+
+#description {
+	font-size: 1.125rem;
+	font-weight: 100;
+	font-style: italic;
+	text-align: center;
+}
+
+label {
+	display: flex;
+	align-items: center;
+	font-size: 1.25rem;
+	margin-bottom: 0.5rem;
+}
+
+input,
+button,
+select,
+textarea {
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+.container {
+	margin: 3.5rem auto 0 auto;
+	width: 100%;
+}
+
+header {
+	padding: 0 0.7rem;
+	margin-bottom: 2rem;
+}
+
+.optional {
+	margin-left: 0.3rem;
+	font-size: 1rem;
+	color: rgb(228, 228, 228);
+}
+
+/* form */
+form {
+	background: rgb(80, 80, 150);
+	margin: auto;
+	padding: 2.5rem 0.6rem;
+	border-radius: 0.3rem;
+}
+
+.form-input {
+	display: block;
+	height: inherit;
+	width: 100%;
+	padding: 0.4rem 0;
+	color: rgb(105, 118, 130);
+	border: 1.5px solid rgb(175, 182, 189);
+	border-radius: 0.3rem;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-input:focus {
+	border-color: rgb(104, 170, 242);
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-container {
+	margin: 0 auto 1.25rem auto;
+	padding: 0.25rem;
+}
+
+.input-radio,
+.input-checkbox {
+	display: inline-block;
+	margin-right: 0.65rem;
+	min-height: 1.25rem;
+	min-width: 1.25rem;
+}
+
+.input-textarea {
+	min-height: 120px;
+	width: 100%;
+	color: rgb(105, 118, 130);
+	resize: vertical;
+	padding: 0.625rem 0;
+}
+
+.submit-button {
+	display: block;
+	width: 100%;
+	border-radius: 2px;
+	cursor: pointer;
+	padding: 0.75rem;
+	color: rgb(228, 228, 228);
+	background: rgb(80, 140, 65);
+}
+
+/* medaia queries */
+@media (min-width: 576px) {
+	.container {
+		max-width: 540px;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+}
+
+@media (min-width: 480px) {
+	form {
+		padding: 2.5rem;
+	}
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Survey Form</title>
+		<link rel="stylesheet" href="/css/style.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<header>
+				<h1 id="title">Future Web Inc.</h1>
+				<p id="description">We need your feedback to improve our services</p>
+			</header>
+			<form id="survey-form ">
+				<div class="form-container">
+					<label for="name" id="name-label">Name</label>
+					<input
+						type="text"
+						name="name"
+						id="name"
+						class="form-input"
+						placeholder="Enter your Name"
+						required
+					/>
+				</div>
+
+				<div class="form-container">
+					<label for="email" id="email-label">Email</label>
+					<input
+						type="email"
+						name="email"
+						id="email"
+						class="form-input"
+						placeholder="Enter your Email"
+						required
+					/>
+				</div>
+
+				<div class="form-container">
+					<label for="age" id="number-label"
+						>Age <span class="optional">(optional)</span></label
+					>
+					<input
+						type="number"
+						name="age"
+						id="age"
+						min="10"
+						max="99"
+						class="form-input"
+						placeholder="Age"
+					/>
+				</div>
+
+				<div class="form-container">
+					<p>Which option best describes your current role</p>
+					<select name="role" id="dropdown" class="form-input" required>
+						<option disabled selected value>Select current role</option>
+						<option value="student">Student</option>
+						<option value="job">Full Time Job</option>
+						<option value="learner">Full Time Learner</option>
+						<option value="preferNo">Prefer not to say</option>
+						<option value="other">Other</option>
+					</select>
+				</div>
+
+				<div class="form-container">
+					<p>How likely are you to recommend Future Web Inc. to a friend</p>
+					<label>
+						<input
+							name="user-recommend"
+							value="very-likely"
+							type="radio"
+							class="input-radio"
+							checked
+						/>Very likely</label
+					>
+					<label>
+						<input
+							name="user-recommend"
+							value="Somewhat-likely"
+							type="radio"
+							class="input-radio"
+						/>Somewhat likely</label
+					>
+
+					<label
+						><input
+							name="user-recommend"
+							value="not-likely"
+							type="radio"
+							class="input-radio"
+						/>Not likely</label
+					>
+				</div>
+
+				<div class="form-container">
+					<p>Where do you hear about us?</p>
+
+					<select
+						id="first-heard"
+						name="first-heard"
+						class="form-input"
+						required
+					>
+						<option disabled selected value>Select an option</option>
+						<option value="our-website">Our website</option>
+						<option value="social-media">Social media</option>
+						<option value="from-mouth">Word of mouth</option>
+						<option value="newspaper">Newspaper</option>
+					</select>
+				</div>
+
+				<div class="form-container">
+					<p>
+						Given the services provided is the prices too low or too high?
+						<span class="check-all">(Check all that apply)</span>
+					</p>
+
+					<label
+						><input
+							name="prices"
+							value="extremely-high"
+							type="checkbox"
+							class="input-checkbox"
+						/>Extremely high</label
+					>
+					<label>
+						<input
+							name="prices"
+							value="very-high"
+							type="checkbox"
+							class="input-checkbox"
+						/>Very high</label
+					>
+
+					<label
+						><input
+							name="prices"
+							value="slightly-high"
+							type="checkbox"
+							class="input-checkbox"
+						/>Slightly high</label
+					>
+
+					<label
+						><input
+							name="prices"
+							value="moderate"
+							type="checkbox"
+							class="input-checkbox"
+						/>Moderate</label
+					>
+					<label
+						><input
+							name="prices"
+							value="slightly-low"
+							type="checkbox"
+							class="input-checkbox"
+						/>slightly low</label
+					>
+					<label
+						><input
+							name="prices"
+							value="very-low"
+							type="checkbox"
+							class="input-checkbox"
+						/>Very low</label
+					>
+					<label
+						><input
+							name="prices"
+							value="extremely-low"
+							type="checkbox"
+							class="input-checkbox"
+						/>Extremely low</label
+					>
+					<label
+						><input
+							name="prices"
+							value="not-sure"
+							type="checkbox"
+							class="input-checkbox"
+						/>Not sure</label
+					>
+				</div>
+
+				<div class="form-container">
+					<p>Any comments or suggestions?</p>
+					<textarea
+						id="comments"
+						class="input-textarea"
+						name="comment"
+						placeholder="Enter your comment here..."
+					></textarea>
+				</div>
+
+				<div class="form-container">
+					<button type="submit" id="submit" class="submit-button">
+						Submit
+					</button>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
