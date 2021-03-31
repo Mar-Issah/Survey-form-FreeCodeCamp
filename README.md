@@ -1,4 +1,4 @@
-# Survey-form-FreeCodeCamp
+# Survey form-FreeCodeCamp
 A simple web application to demonstrate my skills in HTML5 and CSS3
 
 ## About The Project
@@ -27,7 +27,7 @@ This is a simple web application web application project mainly to practice my H
    ```sh
    git clone https://github.com/Mar-Issah/Survey-form-FreeCodeCamp.git
    ```
-2. Dowload and install [Visual Studio Code](https://code.visualstudio.com/)
+2. Download and install [Visual Studio Code](https://code.visualstudio.com/)
 3. Install live server extension
 4. Open index.html file with live server
 
