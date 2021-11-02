@@ -3,7 +3,7 @@
 body {
 	font-family: "Poppins", sans-serif;
 	margin: 0;
-	font-size: 1rem;
+	font-size: 1.05rem;
 	font-weight: 400;
 	color: white;
 }
@@ -19,7 +19,7 @@ body::before {
 	background-image: linear-gradient(
 			115deg,
 			rgba(58, 58, 158, 0.8),
-			rgba(136, 136, 206, 0.6)
+			rgba(136, 136, 206, 0.7)
 		),
 		url("https://res.cloudinary.com/dytnpjxrd/image/upload/v1604688097/form-background_otldij.jpg");
 	background-size: cover;
