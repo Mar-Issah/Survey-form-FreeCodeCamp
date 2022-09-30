@@ -28,7 +28,7 @@ This is a simple web application web application project mainly to practice my H
    git clone https://github.com/Mar-Issah/Survey-form-FreeCodeCamp.git
    ```
 2. Download and install [Visual Studio Code](https://code.visualstudio.com/).
-3. Install live server extension
+3. Install live server extension.
 4. Open index.html file with live server
 
 
