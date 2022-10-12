@@ -1,4 +1,4 @@
-# Survey Form - FreeCodeCamp
+# Survey Form
 A simple web application to demonstrate my skills in HTML5 and CSS3.
 
 ## About The Project
